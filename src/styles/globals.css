@@ -1,0 +1,247 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  @font-face {
+    font-family: "Arame Bold";
+    src: url("../../public/fonts/Arame-Bold.otf") format("opentype");
+  }
+  @font-face {
+    font-family: "Arame";
+    src: url("../../public/fonts/Arame-Regular.otf") format("opentype");
+  }
+  @font-face {
+    font-family: "Barlow Bold";
+    src: url("../../public/fonts/Barlow-Bold.ttf");
+  }
+  @font-face {
+    font-family: "Barlow";
+    src: url("../../public/fonts/Barlow-Regular.ttf");
+  }
+  @font-face {
+    font-family: "Barlow SemiBold";
+    src: url("../../public/fonts/Barlow-SemiBold.ttf");
+  }
+
+}
+
+.border-red {
+  border: 3px solid red;
+}
+
+.border-green {
+  border: 3px solid green;
+}
+
+.border-blue {
+  border: 3px solid blue;
+}
+
+.border-yellow {
+  border: 3px solid yellow;
+}
+
+.swiper-scrollbar {
+  background: #2B2B2B;
+  position: absolute;
+  bottom: -15px;
+  left: 0;
+  width: 100%;
+  height: 1px;
+}
+
+.Revista .swiper-scrollbar {
+  bottom: -50px;
+}
+
+.swiper-scrollbar-drag {
+  background: #2B2B2B;
+  height: 3px;
+  width: 100%;
+}
+
+.enterprise-mobile {
+  .swiper {
+    & > .swiper-pagination {
+      @media screen and (min-width: 640px) {
+        display: none;
+      }
+    }
+
+    & .swiper-pagination-bullet {
+      border: 2px solid #2B2B2B;
+      background: transparent;
+      border-radius: 50%;
+    }
+
+    & .swiper-pagination-bullet-active {
+      border: 2px solid #2B2B2B;
+      background: #2B2B2B;
+    }
+  }
+}
+
+.hero {
+  .swiper {
+
+    & .swiper-pagination-bullet {
+      border: 2px solid white;
+      background: transparent;
+      border-radius: 0;
+      margin: 0 15px!important;
+      
+    }
+
+    & .swiper-pagination-bullet-active {
+      border: 2px solid white;
+      background: white;
+    }
+  }
+}
+
+.carousel-images {
+  .swiper {
+    width: 970px!important;
+    overflow: hidden;
+
+    @media screen and (max-width: 920px) {
+      width: 340px!important;
+    }
+  }
+}
+
+.carousel-revista {
+  width: 1170px;
+  margin-inline: auto;
+  overflow: hidden;
+
+  @media screen and (max-width: 920px) {
+    width: 100%;
+  }
+
+  .swiper {
+    overflow: visible;
+
+    .swiper-slide {
+      width: 160px;
+    }
+
+    @media screen and (max-width: 920px) {
+      width: 340px!important;
+    }
+
+    & > .swiper-pagination {
+      width: 900px !important;
+      margin-bottom: -30px;
+    }
+  }
+}
+
+.plants-mobile {
+  .swiper {
+    & > .swiper-pagination {
+      bottom: 60px;
+      @media screen and (min-width: 640px) {
+        display: none;
+      }
+    }
+
+    & .swiper-pagination-bullet {
+      border: 2px solid #1E2256;
+      background: #1E2256;
+      border-radius: 50%;
+    }
+
+    & .swiper-pagination-bullet-active {
+      border: 2px solid #1E2256;
+      background: #1E2256;
+    }
+  }
+}
+
+.construction-mobile {
+  .swiper {
+    & > .swiper-pagination {
+      bottom: 0%;
+      left: 0%!important;
+      transform: translateX(0%)!important;
+    }
+
+    & .swiper-pagination-bullet {
+      border: 2px solid #2B2B2B;
+      background: #2B2B2B;
+      border-radius: 0;
+      margin: 0!important;
+      transform: scale(1)!important;
+      width: 136px;
+      height: 1px!important;
+      opacity: 1!important;
+    }
+
+    & .swiper-pagination-bullet-active {
+      border: 2px solid #2B2B2B;
+      background: #2B2B2B;
+      height: 6px!important;
+      
+    }
+  }
+}
+
+.images-mobile {
+  .swiper {
+    & > .swiper-pagination {
+      bottom: -5%;
+    }
+
+    & .swiper-pagination-bullet {
+      border: 2px solid #2B2B2B;
+      background: #2B2B2B;
+      border-radius: 0;
+      margin: 0!important;
+      transform: scale(1)!important;
+      width: 136px;
+      height: 1px!important;
+      opacity: 1!important;
+    }
+
+    & .swiper-pagination-bullet-active {
+      border: 2px solid #2B2B2B;
+      background: #2B2B2B;
+      height: 6px!important;
+      
+    }
+  }
+}
+
+iframe {
+  position: absolute;
+  top: -67px;
+  height: 800px;
+}
+
+.enterprise > img:first-child .next-image {
+  border-radius: 20px 0 0 0;
+}
+
+.enterprise > img:last-child .next-image {
+  border-radius: 0 20px 0 0;
+}
+
+.parallax-example {
+  background-image:url('../assets/img/about/detailAbout.webp');
+}
+
+.mdgp-numeros {
+  background: linear-gradient(90deg, #f5f5f5 7%, rgba(197,200,199,1) 7%);
+
+  @media screen and (max-width: 920px) {
+    background: #C5C8C7;
+  }
+}
+
+/* .linhaUp {
+  @media screen and (max-width: 920px) {
+    background: #ffffff;
+  }
+} */

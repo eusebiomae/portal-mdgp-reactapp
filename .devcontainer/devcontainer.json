@@ -1,0 +1,6 @@
+{
+    "name": "PHP Dev Container",
+    "image": "mcr.microsoft.com/devcontainers/typescript-node:18",
+    "postStartCommand": "yarn install && yarn dev",
+    "remoteUser": "root"
+}

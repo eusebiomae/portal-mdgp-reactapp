@@ -1,0 +1,51 @@
+{
+  "name": "mdgp",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "author": "Diogo Realles <diogo.realles@id360.com.br> (https://diogorealles.github.io/)",
+  "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^6.5.2",
+    "@fortawesome/react-fontawesome": "^0.2.2",
+    "@next/third-parties": "^14.1.0",
+    "@types/react-input-mask": "^3.0.5",
+    "aos": "^2.3.4",
+    "axios": "^1.6.7",
+    "date-fns": "^3.6.0",
+    "framer-motion": "^11.3.8",
+    "html-react-parser": "^5.1.12",
+    "js-cookie": "^3.0.5",
+    "next": "^14.1.0",
+    "react": "^18",
+    "react-dom": "^18",
+    "react-google-recaptcha": "^3.1.0",
+    "react-google-recaptcha-v3": "^1.10.1",
+    "react-icons": "^5.0.1",
+    "react-input-mask": "^2.0.4",
+    "react-spinners": "^0.13.8",
+    "react-spring": "^9.7.3",
+    "react-toastify": "^10.0.5",
+    "sharp": "^0.32.6",
+    "swiper": "^11.0.5",
+    "yup": "^1.3.3",
+    "zod": "^3.22.4"
+  },
+  "devDependencies": {
+    "@types/aos": "^3.0.7",
+    "@types/js-cookie": "^3.0.6",
+    "@types/node": "^20",
+    "@types/react": "^18",
+    "@types/react-dom": "^18",
+    "autoprefixer": "^10.0.1",
+    "eslint": "^8",
+    "eslint-config-next": "14.1.0",
+    "postcss": "^8",
+    "tailwindcss": "^3.3.0",
+    "typescript": "^5"
+  }
+}
